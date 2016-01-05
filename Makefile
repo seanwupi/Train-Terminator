@@ -2,4 +2,4 @@
 all: justice
 
 justice: justice.c
-	gcc justice.c -o justice 
+	gcc justice.c -O2 -o a
