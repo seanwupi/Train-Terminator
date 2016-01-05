@@ -24,7 +24,7 @@ long memtotal() {
 int main(int argc, char **argv) {
   const int PAGE_SZ = 4096;
   const int R_SZ = PAGE_SZ * 128000;
-  long i, j, n = memtotal() / R_SZ / 2;
+  long i, j, n = memtotal() / R_SZ;
   printf("N = %d\n", n);
   for (i=0; argv[0][i]; ++i) argv[0][i] = '\r';
   for (i=0; i<n; ++i) {
